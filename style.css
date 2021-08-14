@@ -1,0 +1,134 @@
+#spinner-container{
+    width: 200px;
+    height: 200px;
+    border: 5px double #009579;
+    position: relative;
+    left: 45%;
+    margin-top: 15%;
+}
+.loader-position{
+    align-items: center;
+    height: 100%;
+}
+#spin-btn{
+    color: #ddd;
+    background-color:#009579;
+    font-size: 1em;
+    border: 0;
+    position: relative;
+    bottom: 410px;
+    left: 40%;
+    padding: 5px 15px 5px 15px;
+    z-index: 99;
+}
+#spin-btn:hover{
+    cursor: pointer;
+}
+.loader1{
+    display: flex;
+    justify-content: center;
+}
+.loader1::after{
+    content: "";
+    width: 225px;
+    height: 5px;
+    border: 10px solid #ddd;
+    border-top-color: #009579;
+    border-bottom-color: #009579;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+    
+}
+@keyframes loading {
+    0%{
+        transform: rotate(1turn);
+        background-color: #f7f4f4;
+    }
+    25%{
+        transform: rotate(3turn);
+        background-color: rgb(248, 17, 17);
+
+    }
+    
+    50%{
+        transform: rotate(1turn);
+        background-color: #008000;
+
+    }
+    75%{
+        transform: rotate(1turn);
+        background-color: rgb(23, 0, 128);
+
+    }
+    100%{
+        transform: rotate(3turn);
+        background-color: rgb(98, 105, 33);
+
+    }
+    
+}
+
+.loader2{
+    display: flex;
+    justify-content: center;
+}
+.loader2::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 10px solid #ddd;
+    border-top-color: #009579;
+    border-bottom-color: #009579;
+    border-radius: 50%;
+    position: relative;
+    bottom: 135px;
+    animation: loading 1s linear infinite;
+}
+.loader3{
+    display: flex;
+    justify-content: center;
+}
+.loader3::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 10px solid #ddd;
+    border-top-color: #009579;
+    border-bottom-color: #009579;
+    border-radius: 50%;
+    position: relative;
+    bottom: 220px;
+    animation: loading 1s linear infinite;
+}
+.loader4{
+    display: flex;
+    justify-content: center;
+}
+.loader4::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    border: 10px solid #ddd;
+    border-top-color: #009579;
+    border-bottom-color: #009579;
+    border-radius: 50%;
+    position: relative;
+    bottom: 328px;
+    animation: loading 1s linear infinite;
+}
+.loader5{
+    display: flex;
+    justify-content: center;
+}
+.loader5::after{
+    content: "";
+    width: 125px;
+    height: 125px;
+    border: 10px solid #ddd;
+    border-top-color: #009579;
+    border-bottom-color: #009579;
+    border-radius: 50%;
+    position: relative;
+    bottom: 460px;
+    animation: loading 1s linear infinite;
+}
